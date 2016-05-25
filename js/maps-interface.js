@@ -40,16 +40,10 @@ function locateUser() {
     alert("Your browser doesn't support the Geolocation API");
   }
 }
-
-
-
-
 // this is the success callback from telling the navigator (your browser) to get the current user's position
 // we do this on line 13 above. We pass in a function to call on success, a function to call on error, and some options to tell the geolocation api how we want it to run.
 // on successfully locating the user, geolocationSuccess() gets called automatically, and it is passed the user's position as an argument.
 // on error, geolocationError is called.
-
-
 function geolocationSuccess(position) {
   // here we take the `position` object returned by the geolocation api
   // and turn it into google maps LatLng object by calling the google.maps.LatLng constructor function
@@ -58,7 +52,7 @@ function geolocationSuccess(position) {
   // But you must use coordinates to use this method.
 
   // var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  var userLatLng = new google.maps.LatLng(51.508742, -0.120850);
+  var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
   var myOptions = {
     zoom : 16,
