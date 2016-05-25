@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="build/css/vendor.css"></link>
-  <script type="text/javascript" src="build/js/vendor.min.js"></script>
-  <script type="text/javascript" src="build/js/app.js"></script>
-</head>
-<body>
-  <div class="container">
-        <h1>Get Weather Conditions From Anywhere!</h1>
-        <label for="location">Enter a location:</label>
-        <input id="location" type="text">
-        <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
-        <div class="showWeather"></div>
-          <div class="showWeather2"></div>
-      </div>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
+    <title>Google API</title>
+  </head>
+
+  <body class="container">
+    <h1>Basic Example</h1>
+    <button id="locateUser">Get London Map</button>
+    <div id="map"></div>
+    <!-- <div id="googleMap" style="width:500px;height:380px;"></div> -->
   </body>
 </html>
